@@ -1,6 +1,6 @@
 # NE Butterfly Species Similarity Network
 
-`fv.m` and `vlad.m` create Fisher Vector (FV) and Vector of Linearly Aggregated Descriptors (VLAD) encodings for the Leeds Butterfly Dataset, as used in [Network enhancement as a general method to denoise weighted biological networks](https://www.nature.com/articles/s41467-018-05469-x#Sec8).
+`fv.m` and `vlad.m` create Fisher Vector (FV) and Vector of Linearly Aggregated Descriptors (VLAD) encodings for the [Leeds Butterfly Dataset](https://zenodo.org/records/7559420), as used in [Network enhancement as a general method to denoise weighted biological networks](https://www.nature.com/articles/s41467-018-05469-x#Sec8).
 
 `encodings.m` generates weighted networks representing butterfly species image (i) euclidean-gaussian similarities and (ii) cosine similarities.
 
