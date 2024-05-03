@@ -5,3 +5,5 @@
 `encodings.m` generates weighted networks representing butterfly species image (i) euclidean-gaussian similarities and (ii) cosine similarities.
 
 `run_butterfly_network.m` is a replacement for the same function in the [NE Github](https://github.com/wangboyunze/Network_Enhancement).
+
+`plot_networks.ipynb' displays the original and NE networks.
