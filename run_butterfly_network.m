@@ -8,8 +8,6 @@ load('W_matrix_FV.mat')
 load('pairwise_cosine_new.mat')
 load('pairwise_cosine_FV.mat')
 
-%average = W_matrix .* W_matrix_FV;
-
 %% optional/don't run -- get only top 40
 %matrix = W_matrix;
 %[sorted_values, sorted_indices] = sort(matrix, 2, 'descend');
@@ -31,11 +29,13 @@ load('pairwise_cosine_FV.mat')
 %result = W_matrix;
 %result = W_matrix_FV;
 %result = pairwise_cosine_FV;
+%result = W_matrix .* W_matrix_FV;
+%result = double(pairwise_cosine_new) .* pairwise_cosine_FV;
 
 % run Network_Enhancement
 W_butterfly_NE=Network_Enhancement(result);
-filename = 'W_butterfly_NE.mat';
-save(filename, 'W_butterfly_NE');
+%filename = 'W_butterfly_NE.mat';
+%save(filename, 'W_butterfly_NE');
 
 % print/plot the results
 [~,acc_raw] = CalACC(result, labels); % calculate acc on the raw network
